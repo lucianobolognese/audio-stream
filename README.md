@@ -22,7 +22,7 @@ Trasmetti l'audio del tuo PC Windows via browser su qualsiasi altro dispositivo 
 ## Installazione
 
 ```bash
-git clone [https://github.com/](https://github.com/)<tuo-utente>/audio-stream.git
+git clone repo-link
 cd audio-stream
 pip install flask PyAudioWPatch lameenc numpy waitress
 
@@ -32,7 +32,7 @@ pip install flask PyAudioWPatch lameenc numpy waitress
 
 1. Avvia lo script:
 ```bash
-python pc_audio_stream.py
+python audio_stream.py
 
 ```
 
@@ -40,7 +40,7 @@ python pc_audio_stream.py
 2. All'avvio vengono stampati l'indirizzo, il PIN e le istruzioni:
 ```text
 ========================================
-🔊 PC AUDIO STREAM - Server in avvio
+🔊 AUDIO STREAM - Server in avvio
 ========================================
 🌐 Apri sull'altro dispositivo: [http://192.168.1.20:5000](http://192.168.1.20:5000)
 🔑 PIN di accesso: 123456
@@ -102,7 +102,7 @@ python pc_audio_stream.py
 
 ```text
 audio-stream/
-├── pc_audio_stream.py   # server Flask/Waitress + pagina web
+├── audio_stream.py   # server Flask/Waitress + pagina web
 ├── audio_pin.txt        # PIN (generato al primo avvio, non committare)
 └── README.md
 
